@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MyShopKute</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="content_description">image</string>
+    <string name="title_login">LOGIN</string>
+    <string name="et_hint_email_id">EMAIL ID</string>
+    <string name="et_hint_password">Password</string>
+    <string name="lbl_forgot_password">Forgot Password</string>
+    <string name="don_t_have_a_account">Dont have an acount?</string>
+    <string name="btn_lbl_login">Login</string>
+    <string name="rigister"><u>Rigister</u></string>
+
+    <string name="create_an_account">CREATE AN ACCOUNT</string>
+
+    <string name="hint_lastname">Last Name</string>
+    <string name="hint_firstname">First Name</string>
+    <string name="et_hint_confirm_password">Confirm Password</string>
+
+    <string name="i_agree_to_the_terms_and_condition">I Agree To The <u>Terms And Condition</u></string>
+    <string name="btn_lbl_register">Register</string>
+
+    <string name="Already_have_an_account">Already have an account?</string>
+    <string name="login"><u>Login</u></string>
+
+    <string name="err_msg_enter_firstname">Please enter first name</string>
+    <string name="err_msg_enter_lastname">Please enter last name</string>
+    <string name="err_msg_enter_email">Please enter your email </string>
+    <string name="err_msg_enter_confirmpassword">Please enter confirm password</string>
+    <string name="err_msg_pass_and_cfpass">Password and confirm password mismarch</string>
+    <string name="err_msg_enter_password">Please enter password</string>
+    <string name="err_msg_agree_terms_and_condition">Please agree terms and condition</string>
+    <string name="registery_successful">Thanks for rigistering!</string>
+    <string name="please_wait">Please wait&#8230;</string>
+
+    <string name="tittle_forgot_password">FORGOT PASSWORD?</string>
+    <string name="forgot_password_tittle_description">Enter your email and address we will send you an email reset the password</string>
+    <string name="btn_lbl_submit">Submit</string>
+    <string name="email_sent_success">\"Email sent successfully to reset your password!\"</string>
+    <string name="register_success">you are registerly successful</string>
+
+    <string name="title_complete_profile"> PROFILE</string>
+    <string name="et_hint_moblie_number">Mobile Number</string>
+    <string name="rb_lbl_male">MALE</string>
+    <string name="rb_lbl_female">FEMALE</string>
+    <string name="btn_lbl_save">SAVE</string>
+    <string name="read_storage_permission_denied">Oops, you just denied the permission for storage. You can also allow it from settings.</string>
+    <string name="image_selection_failed">Image selection Failed</string>
+    <string name="err_msg_enter_mobile_number">Pleasea enter your number!</string>
+    <string name="msg_profile_update_success">Your profile updated success</string>
+    <string name="title_activity_dashboard">DashboardActivity</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_products">Products</string>
+    <string name="title_orders">Orders</string>
+
+    <string name="please_clickback_again_to_exit">Please click back agian to exit</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="title_settings">Settings</string>
+    <string name="lbl_edit">Edit</string>
+    <string name="lbl_addresses">Addresses</string>
+    <string name="btn_lbl_logout">Logout</string>
+
+    <!--TODO Step 3: Add the string resources to strings.xml file-->
+    <!--START-->
+    <string name="title_edit_profile">EDIT PROFILE</string>
+    <string name="action_add_product">Add produces</string>
+    <string name="title_add_product">ADD PRODUCES</string>
+    <string name="et_hint_product_title">Produce title</string>
+    <string name="et_hint_product_price">Produce price (VNĐ)</string>
+    <string name="et_hint_product_description">Produce description</string>
+    <string name="et_hint_product_quantity">Produce quantity</string>
+    <!--END-->
+    <string name="err_msg_select_product_image">Please select product image.</string>
+    <string name="err_msg_enter_product_title">Please enter product title.</string>
+    <string name="err_msg_enter_product_price">Please enter product price.</string>
+    <string name="err_msg_enter_product_description">Please enter product description.</string>
+    <string name="err_msg_enter_product_quantity">Please enter product quantity.</string>
+
+    <string name="product_uploaded_success_message">Your product is uploaded successfully.</string>
+    <string name="no_products_added_yet">No products added yet!</string>
+    <string name="no_dashboard_item_found">No items found!</string>
+
+    <!--TODO Step 3: Add the string resources to the strings.xml file-->
+    <!--START-->
+    <string name="product_delete_success_message">Your product is deleted successfully.</string>
+    <string name="delete_dialog_title">Delete</string>
+    <string name="delete_dialog_message">Are you sure you want to delete the product?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+</resources>
