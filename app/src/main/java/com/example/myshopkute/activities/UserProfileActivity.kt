@@ -123,8 +123,9 @@ class UserProfileActivity : BaseActivity(), View.OnClickListener {
                             )
                         } else {
 
-                            updateUserProfileDetails()
+
                         }
+                        updateUserProfileDetails()
                    }
                 }
             }
@@ -158,9 +159,9 @@ class UserProfileActivity : BaseActivity(), View.OnClickListener {
                 if (data != null){
                     try {
                         //the uri selected image from phone storage
-                        val mSelectedImageFileUri = data.data!!
+                         mSelectedImageFileUri = data.data!!
                         // binding.ivUserPhoto.setImageURI(selectedImageFileUri)
-                        GlideLoader(this@UserProfileActivity).loadUserPicture(mSelectedImageFileUri, binding.ivUserPhoto)
+                        GlideLoader(this@UserProfileActivity).loadUserPicture(mSelectedImageFileUri!!, binding.ivUserPhoto)
                     }catch (e: IOException){
                         e.printStackTrace()
                         Toast.makeText(

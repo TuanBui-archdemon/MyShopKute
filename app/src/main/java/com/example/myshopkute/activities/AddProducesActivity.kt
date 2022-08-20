@@ -68,6 +68,7 @@ class AddProducesActivity : BaseActivity(), View.OnClickListener {
                     if (validateProductDetails()) {
 
                         uploadProductImage()
+
                     }
                 }
             }
