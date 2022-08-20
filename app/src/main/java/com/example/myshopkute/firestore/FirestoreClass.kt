@@ -10,10 +10,8 @@ import com.example.myshopkute.models.Produces
 import com.example.myshopkute.models.User
 import com.example.myshopkute.units.Constants
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.auth.UserInfo
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.SetOptions
-import com.google.firebase.ktx.Firebase
 import com.google.firebase.storage.FirebaseStorage
 import com.google.firebase.storage.StorageReference
 
@@ -149,14 +147,16 @@ class FirestoreClass {
     fun uploadImageToCloudStorage(activity: Activity, imageFileURI: Uri?,  imageType: String) {
 
         //getting the storage reference
+//        val sRef: StorageReference = FirebaseStorage.getInstance().reference.child(
+//            imageType + System.currentTimeMillis() + "."
+//                    + Constants.getFileExtension(
+//                activity,
+//                imageFileURI
+//            )
+//        )
         val sRef: StorageReference = FirebaseStorage.getInstance().reference.child(
-            imageType + System.currentTimeMillis() + "."
-                    + Constants.getFileExtension(
-                activity,
-                imageFileURI
-            )
+            "${getCurrentUserID()}.jpg"
         )
-
         //adding the file to reference
         sRef.putFile(imageFileURI!!)
             .addOnSuccessListener { taskSnapshot ->

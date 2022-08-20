@@ -116,16 +116,17 @@ class UserProfileActivity : BaseActivity(), View.OnClickListener {
                         showProgressDialog(resources.getString(R.string.please_wait))
 
                         if (mSelectedImageFileUri != null) {
-
+                             Log.d("vinh", "not null")
                             FirestoreClass().uploadImageToCloudStorage(
                                 this@UserProfileActivity,
                                 mSelectedImageFileUri, Constants.USER_PROFILE_IMAGE
                             )
                         } else {
+                            Log.d("vinh", " null")
 
-                            updateUserProfileDetails()
                         }
-                   }
+                        updateUserProfileDetails()
+                    }
                 }
             }
 
@@ -158,9 +159,9 @@ class UserProfileActivity : BaseActivity(), View.OnClickListener {
                 if (data != null){
                     try {
                         //the uri selected image from phone storage
-                        val mSelectedImageFileUri = data.data!!
+                        mSelectedImageFileUri = data.data!!
                         // binding.ivUserPhoto.setImageURI(selectedImageFileUri)
-                        GlideLoader(this@UserProfileActivity).loadUserPicture(mSelectedImageFileUri, binding.ivUserPhoto)
+                        GlideLoader(this@UserProfileActivity).loadUserPicture(mSelectedImageFileUri!!, binding.ivUserPhoto)
                     }catch (e: IOException){
                         e.printStackTrace()
                         Toast.makeText(
