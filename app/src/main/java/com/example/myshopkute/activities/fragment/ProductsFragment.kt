@@ -20,21 +20,26 @@ import com.example.myshopkute.firestore.FirestoreClass
 import com.example.myshopkute.models.Produces
 
 class ProductsFragment : BaseFragment() {
-    private lateinit var binding: FragmentProducesBinding
+    private var _binding: FragmentProducesBinding? = null
+    private val binding get() = _binding!!
     //cprivate lateinit var homeViewModel: HomeViewModel
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = FragmentProducesBinding.inflate(layoutInflater)
-
+        setHasOptionsMenu(true)
     }
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-
-        val root = inflater.inflate(R.layout.fragment_produces, container, false)
-        return root
+        _binding = FragmentProducesBinding.inflate(inflater, container, false)
+        val view = binding.root
+        //val root = inflater.inflate(R.layout.fragment_produces, container, false)
+        return view
+    }
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
         inflater.inflate(R.menu.add_produces_menu, menu)

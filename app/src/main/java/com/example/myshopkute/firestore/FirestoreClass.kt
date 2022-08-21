@@ -7,6 +7,7 @@ import android.net.Uri
 import android.util.Log
 import androidx.fragment.app.Fragment
 import com.example.myshopkute.activities.*
+import com.example.myshopkute.activities.fragment.DashboardFragment
 import com.example.myshopkute.activities.fragment.ProductsFragment
 import com.example.myshopkute.models.Produces
 import com.example.myshopkute.models.User
@@ -297,5 +298,34 @@ class FirestoreClass {
             }
     }
     // END
+    fun getDashboardItemsList(fragment: DashboardFragment) {
+        // The collection name for PRODUCTS
+        mFirestore.collection(Constants.PRODUCTS)
+            .get() // Will get the documents snapshots.
+            .addOnSuccessListener { document ->
+
+                // Here we get the list of boards in the form of documents.
+                Log.e(fragment.javaClass.simpleName, document.documents.toString())
+
+                // Here we have created a new instance for Products ArrayList.
+                val productsList: ArrayList<Produces> = ArrayList()
+
+                // A for loop as per the list of documents to convert them into Products ArrayList.
+                for (i in document.documents) {
+
+                    val product = i.toObject(Produces::class.java)!!
+                    product.product_id = i.id
+                    productsList.add(product)
+                }
+
+                // Pass the success result to the base fragment.
+                fragment.successDashboardItemsList(productsList)
+            }
+            .addOnFailureListener { e ->
+                // Hide the progress dialog if there is any error which getting the dashboard items list.
+                fragment.hideProgressDialog()
+                Log.e(fragment.javaClass.simpleName, "Error while getting dashboard items list.", e)
+            }
+    }
 
 }

@@ -13,6 +13,7 @@
         <entry key="..\:/Users/PC/AndroidStudioProjects/MyShopKute/app/src/main/res/drawable/ic_vector_dashboard.xml" value="0.1475" />
         <entry key="..\:/Users/PC/AndroidStudioProjects/MyShopKute/app/src/main/res/drawable/ic_vector_delete.xml" value="0.1475" />
         <entry key="..\:/Users/PC/AndroidStudioProjects/MyShopKute/app/src/main/res/drawable/ic_vector_edit.xml" value="0.122" />
+        <entry key="..\:/Users/PC/AndroidStudioProjects/MyShopKute/app/src/main/res/drawable/ic_vector_products.xml" value="0.122" />
         <entry key="..\:/Users/PC/AndroidStudioProjects/MyShopKute/app/src/main/res/drawable/ic_vector_settings.xml" value="0.1475" />
         <entry key="..\:/Users/PC/AndroidStudioProjects/MyShopKute/app/src/main/res/drawable/ic_white_color_back_24dp.xml" value="0.123" />
         <entry key="..\:/Users/PC/AndroidStudioProjects/MyShopKute/app/src/main/res/drawable/item_grey_border_background.xml" value="0.124" />
@@ -40,6 +41,7 @@
         <entry key="..\:/Users/PC/AndroidStudioProjects/MyShopKute/app/src/main/res/layout/fragment_notifications.xml" value="0.1140625" />
         <entry key="..\:/Users/PC/AndroidStudioProjects/MyShopKute/app/src/main/res/layout/fragment_orders.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/PC/AndroidStudioProjects/MyShopKute/app/src/main/res/layout/fragment_produces.xml" value="0.2" />
+        <entry key="..\:/Users/PC/AndroidStudioProjects/MyShopKute/app/src/main/res/layout/item_dashboard_layouy.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/PC/AndroidStudioProjects/MyShopKute/app/src/main/res/layout/item_list_layout.xml" value="0.253125" />
         <entry key="..\:/Users/PC/AndroidStudioProjects/MyShopKute/app/src/main/res/layout/rv_item_image_background.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/PC/AndroidStudioProjects/MyShopKute/app/src/main/res/menu/add_produces_menu.xml" value="0.25416666666666665" />

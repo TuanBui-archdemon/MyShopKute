@@ -91,4 +91,6 @@
     <string name="no">No</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="item_name">Item Name</string>
+    <string name="_100000vn">100000VNĐ</string>
 </resources>
